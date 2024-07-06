@@ -34,9 +34,7 @@ public class Program
 
             if (lista[j] > lista[minIndex])
             {
-                int aux = lista[j];
-                lista[j] = lista[minIndex];
-                lista[minIndex] = aux;
+                (lista[minIndex], lista[j]) = (lista[j], lista[minIndex]);
             }
         }
     }
